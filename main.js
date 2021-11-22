@@ -1,7 +1,5 @@
 import {
-  fetchAndRenderLists,
-  fetchAndRenderCategory,
-  createCategoryBackLink,
+  fetchAndRenderTodos,
 } from './lib/ui.js';
 import { empty } from './lib/helpers.js';
 
@@ -13,7 +11,8 @@ const main = document.querySelector('main');
  * - `/` birtir yfirlit
  */
 function route() {
-  fetchAndRenderLists(main);
+  debugger;
+  fetchAndRenderTodos(main);
 }
 
 /**
