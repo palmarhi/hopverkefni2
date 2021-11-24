@@ -38,67 +38,51 @@ main {
   padding: 0 1rem;
 }
 
-.layout__footer {
-  padding: 1rem;
-  border-top: 1px solid #333;
-}
+/* Todolist */
 
-/* Newslist */
-
-.newsList__title {
+.todoList__title {
   margin: 0;
   padding: 0;
 }
 
-.newsList__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.todoList__list {
+  display: inline-block;
 }
 
-.newsList__item {
-  grid-column: span 1;
+.todoList__item {
+  margin-bottom: 1em;
 }
 
-/* News */
+/* Todo */
 
-.news {
+.todo {
   display: flex;
   flex-direction: column;
 
   padding-top: 1rem;
 
-  border: 1px solid #333;
-  border-radius: 5px;
-
-  background-color: #f5f3e3;
-
   overflow: hidden;
 }
 
-.news p {
-  padding: 0 1rem 1rem 1rem;
+.todo__title {
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
 }
 
-.news__title {
-  margin: 0 0 1rem 0;
-  padding: 0 1rem;
-}
-
-.news__list {
+.todo__list {
   margin: 0 0 1rem 0;
   padding: 0 1rem;
   list-style: none;
 }
 
-.news__item a {
+.todo__item a {
   display: block;
   color: #222;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-.news__links {
+.todo__links {
   order: 4;
 
   display: flex;
@@ -107,7 +91,15 @@ main {
   padding: 1rem;
 }
 
-.news__link {
+.todo__details {
+  display: flex;
+}
+
+.todo .tags {
+  display: flex;
+}
+
+.todo__link {
   background-color: transparent;
   border: 0;
   font-family: inherit;
@@ -116,4 +108,12 @@ main {
 
   font-weight: bold;
   color: #222;
+}
+
+.tag {
+  margin: auto 0.5em;
+}
+
+.due-date {
+  margin-right: 0.5em;
 }

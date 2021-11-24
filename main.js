@@ -11,7 +11,6 @@ const main = document.querySelector('main');
  * - `/` birtir yfirlit
  */
 function route() {
-  debugger;
   fetchAndRenderTodos(main);
 }
 
