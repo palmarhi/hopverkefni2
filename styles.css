@@ -26,6 +26,10 @@ main {
   width: 100%;
 }
 
+h1{
+  text-align: center;
+}
+
 /* Layout */
 
 .layout__header {
@@ -50,7 +54,8 @@ main {
 }
 
 .todoList__item {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Todo */
@@ -66,7 +71,7 @@ main {
 
 .todo__title {
   font-weight: 600;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .todo__list {
@@ -95,6 +100,10 @@ main {
   display: flex;
 }
 
+.todo__desc {
+  margin: 0 0 1rem 0;
+}
+
 .todo .tags {
   display: flex;
 }
@@ -112,8 +121,32 @@ main {
 
 .tag {
   margin: auto 0.5em;
+  padding: 0.3em 0.5em;
+  line-height: 1em;
+  background-color: lightgray;
+  border-radius: 5px;
 }
 
 .due-date {
   margin-right: 0.5em;
+  color: gray;
 }
+
+.selectdesc{
+  float: left;
+  line-height: 1.8em;
+  padding-right: 1em;
+}
+
+select {
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.layout__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
