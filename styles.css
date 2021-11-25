@@ -173,3 +173,13 @@ select {
     float: left;
     margin: 7px 10px 0 0;
   }
+
+  .todoList__button {
+    width: 100%;
+    font-weight: 300;
+  }
+
+  .todoList__button::before {
+    padding-right: 0.5rem;
+    content: url("images/add-circle-outline.svg");
+  }
