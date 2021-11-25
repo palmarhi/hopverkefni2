@@ -168,6 +168,13 @@ select {
     margin: 10px 0;
     font-size: 1.2em;
   }
+  li::after {
+    float: right;
+    margin-right: 50px;
+    content: "0";
+    color: gray;
+  }
+
 
   input[type='checkbox'] {
     float: left;
