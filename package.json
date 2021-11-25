@@ -8,12 +8,20 @@
   },
   "scripts": {
     "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
+    "copy-html": "cpy ./*.html ./build/",
+    "copy-main": "cpy ./main.js ./build/",
+    "copy-css": "cpy ./*.css ./build/",
+    "copy-lib": "cpy ./lib/* ./build/lib/",
+    "copy-images": "cpy ./images/* ./build/images/",
+    "build": "concurrently \"npm:copy-html\" \"npm:copy-main\" \"npm:copy-lib\" \"npm:copy-images\" \"npm:copy-css\"",
     "lint": "eslint ./**/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^6.2.2",
+    "cpy-cli": "^1.0.1",
     "browser-sync": "2.27.5",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
