@@ -149,7 +149,7 @@ select {
 
 .layout__main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -166,6 +166,7 @@ select {
   li{
     cursor: pointer;
     margin: 10px 0;
+    font-size: 1.2em;
   }
 
   input[type='checkbox'] {
