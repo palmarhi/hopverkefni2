@@ -23,7 +23,8 @@ body {
 }
 
 main {
-  width: 100%;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 h1{
@@ -62,8 +63,8 @@ h1{
 /* Todo */
 
 .todo {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
 
   padding-top: 1rem;
 
@@ -71,6 +72,7 @@ h1{
 }
 
 .todo__title {
+  font-size: 1.1em;
   font-weight: 600;
   margin: 0 0 1rem 0;
 }
@@ -103,6 +105,7 @@ h1{
 
 .todo__desc {
   margin: 0 0 1rem 0;
+  color: gray;
 }
 
 .todo .tags {
@@ -124,7 +127,7 @@ h1{
   margin: auto 0.5em;
   padding: 0.3em 0.5em;
   line-height: 1em;
-  background-color: lightgray;
+  background-color: rgb(218, 180, 208);
   border-radius: 5px;
 }
 
@@ -152,3 +155,20 @@ select {
   grid-row-gap: 0px;
   }
 
+  h2{
+    margin-top: 30px;
+  }
+
+  ul{
+    list-style-type: none;
+    margin: 10px 0;
+  }
+  li{
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  input[type='checkbox'] {
+    float: left;
+    margin: 7px 10px 0 0;
+  }
