@@ -5,8 +5,7 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-y: scroll;
 }
 
@@ -20,8 +19,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 main {
@@ -45,12 +43,9 @@ h2 {
 }
 
 .layout__main {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
   margin-bottom: 1rem;
   padding: 0 1rem;
 }
@@ -75,7 +70,6 @@ h2 {
   width: 100%;
   font-weight: 300;
 }
-
 .todoList__button::before {
   padding-right: 0.5rem;
   content: url("images/add-circle-outline.svg");
@@ -86,19 +80,16 @@ h2 {
   padding-top: 1rem;
   overflow: hidden;
 }
-
 .todo .todo__title {
   font-size: 1.1em;
   font-weight: 600;
   margin: 0 0 1rem;
 }
-
 .todo .todo__desc {
   margin: 0 0 1rem;
   color: gray;
 }
-
-.todo input[type="checkbox"] {
+.todo input[type=checkbox] {
   float: left;
   margin: 7px 10px 0 0;
 }
@@ -117,18 +108,11 @@ h2 {
 }
 
 .todo__links {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  order: 4;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 1rem;
 }
-
 .todo__links .todo__link {
   background-color: transparent;
   border: 0;
@@ -153,22 +137,16 @@ select {
 
 /* TODO Details */
 .todo__details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .todo__details .due-date {
   margin-right: 0.5em;
   color: gray;
 }
 
 .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .tags .tag {
   margin: auto 0.5em;
   padding: 0.3em 0.5em;
@@ -188,7 +166,6 @@ li {
   margin: 10px 0;
   font-size: 1.2em;
 }
-
 li::after {
   float: right;
   margin-right: 50px;
@@ -210,12 +187,8 @@ button {
 }
 
 .addOrModify {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
+
 /*# sourceMappingURL=styles.css.map */
