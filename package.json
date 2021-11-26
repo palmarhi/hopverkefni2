@@ -18,7 +18,8 @@
     "copy-lib": "cpy ./lib/* ./build/lib/",
     "copy-images": "cpy ./images/* ./build/images/",
     "build": "concurrently \"npm:copy-html\" \"npm:copy-main\" \"npm:copy-lib\" \"npm:copy-images\" \"npm:sass-build\"",
-    "lint": "eslint ./**/*.js"
+    "lint": "eslint ./**/*.js",
+    "stylelint": "stylelint styles.scss"
   },
   "keywords": [],
   "author": "",
