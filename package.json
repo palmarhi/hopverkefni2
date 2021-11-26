@@ -1,19 +1,24 @@
 {
-  "name": "v9",
+  "name": "Verkefni-10",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "images": "images"
   },
   "scripts": {
-    "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
+    "browser-sync": "browser-sync start --server --files main.js **/*.js styles.scss index.html",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch styles.scss styles.css",
+    "dev": "concurrently npm:sass npm:sass-watch npm:browser-sync",
+    "sass-build": "sass styles.scss ./build/styles.css",
     "copy-html": "cpy ./*.html ./build/",
     "copy-main": "cpy ./main.js ./build/",
     "copy-css": "cpy ./*.css ./build/",
     "copy-lib": "cpy ./lib/* ./build/lib/",
     "copy-images": "cpy ./images/* ./build/images/",
-    "build": "concurrently \"npm:copy-html\" \"npm:copy-main\" \"npm:copy-lib\" \"npm:copy-images\" \"npm:copy-css\"",
+    "build": "concurrently \"npm:copy-html\" \"npm:copy-main\" \"npm:copy-lib\" \"npm:copy-images\" \"npm:sass-build\" \"npm:copy-css\"",
     "lint": "eslint ./**/*.js"
   },
   "keywords": [],
@@ -22,6 +27,10 @@
   "devDependencies": {
     "concurrently": "^6.2.2",
     "cpy-cli": "^1.0.1",
+    "sass": "^1.42.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "browser-sync": "2.27.5",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
