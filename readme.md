@@ -22,7 +22,7 @@ concurrently`. Verkefnið er keyrt með `npm run dev`. Skipunin setur af stað
 ferli sem þýðir sass yfir í css og kveikir á browser-sync þjóni sem fylgist með 
 breytingum á _þýddri_ css skrá.
 
-Með `npm run lint` er stylelint keyrt á Sass
+Með `npm run lint` er stylelint keyrt á Sass. Setjum líka upp eslint fyrir verkefnið með skipuninni `npm install eslint --save-dev`.
 
 ## Raun
 
