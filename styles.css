@@ -172,7 +172,7 @@ select {
   li::after {
     float: right;
     margin-right: 50px;
-    content: "0";
+    content: attr(value);
     color: gray;
   }
 
