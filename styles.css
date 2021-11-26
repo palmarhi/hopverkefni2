@@ -53,6 +53,7 @@ h1{
 
 .todoList__list {
   display: inline-block;
+  width: 100%;
 }
 
 .todoList__item {
@@ -190,4 +191,20 @@ select {
   .todoList__button::before {
     padding-right: 0.5rem;
     content: url("images/add-circle-outline.svg");
+  }
+
+
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    border: 1px gray dashed;
+    border-radius: 5px;
+    padding: 4px 10px 4px 7px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    margin-top: 20px;
+    font-size: 1.2em;
   }
