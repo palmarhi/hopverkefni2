@@ -1,9 +1,12 @@
 # Hópverkefni 2
 
+
 |   | Mikael Andri Ingason |Pálmar Sæmundsson |Sigurður Örn Gunnarsson |
 | ------------- |:-------------:|:-------------:|:-------------:|
 | HÍ     | mai24    |pas4     |sog6     |
 | GitHub     |  MikaelAndriIngason    |palmarhi    |sog6    |
+
+
 
 ## High-fidelity prótótýpa
 
@@ -11,7 +14,7 @@ Verkefnið felst í því að smíða todo vefforrit sem geymir stöðu í vafra
 
 ## Keyrsla
 
-Til að keyra verkefni þarf Node.js og npm að vera uppsett á tölvunni.
+Til að keyra verkefni þarf Node.js og npm að vera uppsett á tölvunni. 
 
 Verkefnið er keyrt með `npm run dev`. Skipunin setur í af stað ferli sem þýðir sass yfir í css og kveikir á browser-sync þjóni sem fylgist með breytingum á _þýddri_ css skrá.
 
@@ -25,7 +28,7 @@ Með `npm run build` er búið til _production build_. Við það keyrist skilgr
 
 ## Skipulag
 
-Verkefninu er skipt þannig upp í möppur að allar html skrár eru í rót. CSS/Sass skrár eru í rót.
+Verkefninu er skipt þannig upp í möppur að allar _html_ skrár, _.css_ og _.sass_ skrár og `main.js` eru í rót. Aðrar _js_ skrár eru í `lib` möppu.
 
 Mynd sem notuð er sem icon í hnapp á síðunni er geymd í `images` möppu.
 
