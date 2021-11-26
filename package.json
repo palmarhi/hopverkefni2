@@ -11,7 +11,7 @@
     "browser-sync": "browser-sync start --server --files main.js **/*.js styles.scss index.html",
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss styles.css",
-    "dev": "concurrently npm:sass npm:sass-watch npm:browser-sync",
+    "dev": "concurrently \"npm:sass\" \"npm:sass-watch\" \"npm:browser-sync",
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy-html": "cpy ./*.html ./build/",
     "copy-main": "cpy ./main.js ./build/",
