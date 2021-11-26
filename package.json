@@ -15,10 +15,9 @@
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy-html": "cpy ./*.html ./build/",
     "copy-main": "cpy ./main.js ./build/",
-    "copy-css": "cpy ./*.css ./build/",
     "copy-lib": "cpy ./lib/* ./build/lib/",
     "copy-images": "cpy ./images/* ./build/images/",
-    "build": "concurrently \"npm:copy-html\" \"npm:copy-main\" \"npm:copy-lib\" \"npm:copy-images\" \"npm:sass-build\" \"npm:copy-css\"",
+    "build": "concurrently \"npm:copy-html\" \"npm:copy-main\" \"npm:copy-lib\" \"npm:copy-images\" \"npm:sass-build\"",
     "lint": "eslint ./**/*.js"
   },
   "keywords": [],
