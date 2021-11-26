@@ -1,12 +1,10 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-y: scroll;
 }
 
@@ -20,8 +18,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 main {
@@ -39,23 +36,22 @@ h2 {
 }
 
 /* Layout */
+
 .layout__header {
   margin-bottom: 1rem;
   padding: 0 1rem;
 }
 
 .layout__main {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
   margin-bottom: 1rem;
   padding: 0 1rem;
 }
 
 /* Todolist */
+
 .todoList__title {
   margin: 0;
   padding: 0;
@@ -74,33 +70,34 @@ h2 {
 .todoList__button {
   width: 100%;
   font-weight: 300;
-}
 
-.todoList__button::before {
-  padding-right: 0.5rem;
-  content: url("images/add-circle-outline.svg");
+  &::before {
+    padding-right: 0.5rem;
+    content: url("images/add-circle-outline.svg");
+  }
 }
 
 /* TODO */
+
 .todo {
   padding-top: 1rem;
   overflow: hidden;
-}
 
-.todo .todo__title {
-  font-size: 1.1em;
-  font-weight: 600;
-  margin: 0 0 1rem;
-}
+  .todo__title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
 
-.todo .todo__desc {
-  margin: 0 0 1rem;
-  color: gray;
-}
+  .todo__desc {
+    margin: 0 0 1rem;
+    color: gray;
+  }
 
-.todo input[type="checkbox"] {
-  float: left;
-  margin: 7px 10px 0 0;
+  input[type="checkbox"] {
+    float: left;
+    margin: 7px 10px 0 0;
+  }
 }
 
 .todo__list {
@@ -117,29 +114,24 @@ h2 {
 }
 
 .todo__links {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  order: 4;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 1rem;
-}
 
-.todo__links .todo__link {
-  background-color: transparent;
-  border: 0;
-  font-family: inherit;
-  font-size: inherit;
-  text-decoration: none;
-  font-weight: bold;
-  color: #222;
+  .todo__link {
+    background-color: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+  }
 }
 
 /* Raða eftir */
+
 .selectdesc {
   float: left;
   line-height: 1.8em;
@@ -152,32 +144,30 @@ select {
 }
 
 /* TODO Details */
-.todo__details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
-.todo__details .due-date {
-  margin-right: 0.5em;
-  color: gray;
+.todo__details {
+  display: flex;
+
+  .due-date {
+    margin-right: 0.5em;
+    color: gray;
+  }
 }
 
 .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
 
-.tags .tag {
-  margin: auto 0.5em;
-  padding: 0.3em 0.5em;
-  line-height: 1em;
-  background-color: #dab4d0;
-  border-radius: 5px;
+  .tag {
+    margin: auto 0.5em;
+    padding: 0.3em 0.5em;
+    line-height: 1em;
+    background-color: #dab4d0;
+    border-radius: 5px;
+  }
 }
 
 /* Annað */
+
 ul {
   list-style-type: none;
   margin: 10px 0;
@@ -187,13 +177,13 @@ li {
   cursor: pointer;
   margin: 10px 0;
   font-size: 1.2em;
-}
 
-li::after {
-  float: right;
-  margin-right: 50px;
-  content: attr(value);
-  color: gray;
+  &::after {
+    float: right;
+    margin-right: 50px;
+    content: attr(value);
+    color: gray;
+  }
 }
 
 button {
@@ -210,12 +200,6 @@ button {
 }
 
 .addOrModify {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-/*# sourceMappingURL=styles.css.map */
